@@ -1,0 +1,200 @@
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">ByteMe</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Favourites</a></li>
+      </ul>
+	  
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Edit</a></li>
+      </ul>
+	  
+
+	  
+	  
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+  <ul class="nav navbar-nav navbar-right">
+		<li><a href="#">Sign out </a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>  
+      </ul>
+
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#">My Profile</a></p>
+        <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="well">
+        <p><a href="#">Interests</a></p>
+        <p>
+          <span class="label label-default">News</span>
+          <span class="label label-primary">W3Schools</span>
+          <span class="label label-success">Labels</span>
+          <span class="label label-info">Football</span>
+          <span class="label label-warning">Gaming</span>
+          <span class="label label-danger">Friends</span>
+        </p>
+      </div>
+   
+      <p> <small><cite title="Galway, Ireland">Galway, Ireland ( USERNAME LOCATION) <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small></p>
+      <p><i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br /></p>
+      <p><i class="glyphicon glyphicon-globe"></i><a href="https://google.ie">Google(any website , edit later)</a>
+                            <br /></p>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <center contenteditable="true">Recently comments:</center>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	<!-- database comments-->
+	
+	  <{{#each movieComment}}
+	    <div class="row">
+		
+        <div class="col-sm-3">
+          <div class="well">
+           <p>{{movieName}}</p>
+           <img src={{image}} class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>{{comment}}</p>
+          </div>
+        </div>
+	
+      </div>
+{{/each}}
+
+	  <!--  edits -->
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>MOVIE#1</p>
+           <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>MOVIE#2</p>
+           <img src="http://www.orenairport.ru/userfiles/images/novoe/question.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>MOVIE#3</p>
+           <img src="http://previews.123rf.com/images/kharlamova/kharlamova1111/kharlamova111100072/11196349-Man-sitting-on-a-question-mark-3d-render-Stock-Photo.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>TV SHOW #1</p>
+           <img src="http://images.clipartpanda.com/question-yikA5pBiE.jpeg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>USER RATING:</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/3.5_stars.svg/1280px-3.5_stars.svg.png" alt="Rating" width="400" height="300">
+        <p><strong>Rating</strong></p>
+        <p>700/1000 </p>
+        <button class="btn btn-primary">Upvote</button>
+      </div>      
+      <div class="well">
+        <p>YOUR ADS COULD BE HERE </p>
+      </div>
+      <div class="well">
+        <p>YOUR ADS COULD BE HERE </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text . All Rights Reserved 2017 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Copyright.svg/170px-Copyright.svg.png" width='15' height='15'></p>
+</footer>
+</body>
+</html>

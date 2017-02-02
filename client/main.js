@@ -3,42 +3,34 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-    this.increment = new ReactiveVar(0);
-    this.decrement = new ReactiveVar(10); 
+//Rating section
+$('.rating span.star').click(function(){
+    var total=$(this).parent().children().length;
+    var clickedIndex=$(this).index();
+
+/*    $('.rating span.star').removeClass('filled');
+        for(var i=clickedIndex;i<total;i++){
+	           $('.rating span.star').eq(i).addClass('filled');
+        } */
+    
+    $('.rating span.star').click(function() {
+       $('.rating span.star').removeClass('active');
+        $(this).addClass('active');
+    })
 });
 
-Template.hello.helpers({
-    increment : function inc () {
-        return Template.instance().increment.get();
-    },
-    decrement : function dec () {
-        return Template.instance().decrement.get();
-    },
-    multipurpose : function multi () {
-        return Template.instance().multipurpose.get();
-    },
-});
-
-Template.hello.events({
-    'click .bt1' : function (event, instance) {
-        // increment the counter when button is clicked
-        instance.increment.set(instance.increment.get() + 1);
-    },
-    
-    'click .bt2' : function (event, instance) {
-        // decrement the counter when button is clicked
-        instance.decrement.set(instance.decrement.get() - 1);
-    },
-    
-    'click .bt3' : function (event, instance) {
-        // access the other counter when button is clicked
-        instance.multipurpose.set(instance.increment.get(instance.decrement));
-        
+//Comments section
+$('#comments-container').comments({
+    profilePictureURL: 'https://app.viima.com/static/media/user_profiles/user-icon.png',
+    getComments: function(success, error) {
+        var commentsArray = [{
+            id: 1,
+            created: '2015-10-01',
+            content: 'Lorem ipsum dolort sit amet',
+            fullname: 'Simon Powell',
+            upvote_count: 2,
+            user_has_upvoted: false
+        }];
+        success(commentsArray);
     }
-});
-
-$(document).ready(function(){
-    $("[data-toggle=tooltip]").tooltip();
 });

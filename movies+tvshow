@@ -1,0 +1,173 @@
+
+<template name="tvshows">
+<div class="row">
+<div class="col-sm-2">
+      </div> 
+
+	  <div class="col-sm-2">
+<input type="text" name="search" placeholder="Search Tv Shows.." >
+		<button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+</div>
+<input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
+<div class="col-sm-2">
+<div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/GOT.jpg" class="img-thumbnail" style="width:100%">
+	   <div class="caption">
+		<p>Game of Thrones</p>
+		</div>
+		</a>
+		</div></div>
+		
+	  
+	<div class="col-sm-2">
+	<div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/barney.png" class="img-thumbnail">
+	   <div class="caption">
+		<p>Barney</p>
+		</div>
+		
+		</a>
+		</div></div>
+	
+	<div class="col-sm-2">
+       <a href="#" target="_blank">
+	   <div class="thumbnail">
+       <img  src="/images/community.jpg" class="img-thumbnail" width="300" height="300">
+	   <div class="caption">
+		<p class="title">Community</p>
+		</div>
+		</div> 
+		</a>
+		</div>
+		</div>
+	  
+	 <div class="row">
+	 <div class="col-sm-4">
+      </div>  
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/HTGAWM.jpg" class="img-thumbnail" height="500px" width="500px">
+	   <div class="caption">
+		<p>How to Get Away with Murder</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img  src="/images/sherlock.jpg" class="img-thumbnail">
+	   <div class="caption">
+		<p>Sherlock</p>
+		</div>
+		</a>
+		</div>
+		</div>
+        
+      
+    <div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/daredevil.jpg" class="img-thumbnail">
+	   <div class="caption">
+		<p>Daredevil</p>
+		</div></a></div></div>
+		
+	<div class="col-sm-2">
+	</div>
+	</div>
+</template>
+<template name="movies">
+<div class="row">
+<div class="col-sm-2">
+      </div> 
+
+	  <div class="col-sm-2">
+<input type="text" name="search" placeholder="Search Movies.." >
+		<button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+</div>
+
+<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	  </div>
+	 <div class="row">
+	 
+	 <div class="col-sm-4">
+      </div>  
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+      
+    <div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+	</div>
+	</div>
+</template>

@@ -1,40 +1,201 @@
+<!-- About Us template -->
 <template name="aboutUs">
 <div class="container">
-  <div class="jumbotron">
-    <h1>About Us</h1>
+  <div class="jumbotron" style="float:left">
+	<h2><b>About Us</b></h2>
       <p>Owners of this app are a sexy group of people</p>
-      <span class="glyphicons glyphicons-handshake"></span>
+      <span class="glyphicon glyphicon-handshake"></span>
+  </div>
+    
+     <div class="jumbotron" style="float:right">
+	<h2><b>Team Members</b></h2>
+      <p>We're all really awesome</p>
+      <span class="glyphicon glyphicon-handshake"></span>
   </div>
 </div> 
 </template>
 
+<!-- Contact Us template -->
 <template name="contactUs">
 <div class="container">
   <div class="jumbotron">
     <h1>Contact Us</h1>
-    <p>Our info - below</p>
-      <span class="glyphicons glyphicons-handshake"></span>
+	<br>
+    <h3>Queries:</h3>
+	
+	<form>
+  <div class="form-group">
+    <label for="question">Enter your question:</label>
+    <input type="question" class="form-control" id="question">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      <span class="glyphicon glyphicon-handshake"></span>
+	 <br>
+	<h3>Other forms of contact:</h3>
+	<ul><li>email one</li>
+		<li>email two</li>
+	</ul>
   </div>
 </div>
 </template>
 
+<!-- Find Us template -->
 <template name="findUs">
 <div class="container">
-  <div class="jumbotron">
+  <div class="jumbotron" style="float:left">
     <h1>Find Us</h1>
-    <p>Located in the underrated college that is NUI Galway.</p>
+    <p>Based in NUI Galway.</p>
       <span class="glyphicons glyphicons-handshake"></span>
   </div>
-</div>
-<iframe
+  <div class="jumbotron" style="float:right">
+	<iframe
   width="600"
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD08T2oBdJybZ49h1jd3dMQ6AaZafvyVr8
     &q=National+University+Of+Ireland,Galway" allowfullscreen>
 </iframe>
+  </div>
+    </div>
+    </template>
+
+<!-- Profile Page template -->
+<template name="profile">
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#">My Profile</a></p>
+        <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="well">
+        <p><a href="#">Interests</a></p>
+        <p>
+          <span class="label label-default">News</span>
+          <span class="label label-primary">W3Schools</span>
+          <span class="label label-success">Labels</span>
+          <span class="label label-info">Football</span>
+          <span class="label label-warning">Gaming</span>
+          <span class="label label-danger">Friends</span>
+        </p>
+      </div>
+   
+      <p> <small><cite title="Galway, Ireland">Galway, Ireland ( USERNAME LOCATION) <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small></p>
+      <p><i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br /></p>
+      <p><i class="glyphicon glyphicon-globe"></i><a href="https://google.ie">Google(any website , edit later)</a>
+                            <br /></p>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <center contenteditable="true">Recently comments:</center>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	<!-- database comments-->
+	
+	  {{#each movieComment}}
+	    <div class="row">
+		
+        <div class="col-sm-3">
+          <div class="well">
+           <p>{{movieName}}</p>
+           <img src={{image}} class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>{{comment}}</p>
+          </div>
+        </div>
+	
+      </div>
+{{/each}}
+
+	  <!--  edits -->
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>MOVIE#1</p>
+           <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>MOVIE#2</p>
+           <img src="http://www.orenairport.ru/userfiles/images/novoe/question.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>MOVIE#3</p>
+           <img src="http://previews.123rf.com/images/kharlamova/kharlamova1111/kharlamova111100072/11196349-Man-sitting-on-a-question-mark-3d-render-Stock-Photo.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>TV SHOW #1</p>
+           <img src="http://images.clipartpanda.com/question-yikA5pBiE.jpeg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>USER RATING:</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/3.5_stars.svg/1280px-3.5_stars.svg.png" alt="Rating" width="400" height="300">
+        <p><strong>Rating</strong></p>
+        <p>700/1000 </p>
+        <button class="btn btn-primary">Upvote</button>
+      </div>      
+      <div class="well">
+        <p>YOUR ADS COULD BE HERE </p>
+      </div>
+      <div class="well">
+        <p>YOUR ADS COULD BE HERE </p>
+      </div>
+    </div>
+  </div>
+    </div>
 </template>
 
+<!-- Info page for La La Land template -->
 <template name="info">
 <div class="container">
     <div class="jumbotron">
@@ -43,7 +204,7 @@
     <div class="title">
         <h1>LA LA LAND</h1> 
     <div class="desc">
-            Directed by, Damien Chazelle, the movie follows a musician and an aspiring actress who meet and fall in love in Los Angeles, the city known for crushing hopes and breaking hearts.        
+         Directed by, Damien Chazelle, the movie follows a musician and an aspiring actress who meet and fall in love in Los Angeles, the city known for crushing hopes and breaking hearts.        
     </div>
     <div class="desc-left">
         <p style="font-size: 16px"><strong>Genre:</strong> Comedy, Musical, Drama</p>
@@ -71,34 +232,281 @@
        <span class="star"></span>
         </span>
     </div>
-        
-  
 </div>   
-</div>
-    
-<!--<div class="comment-area">
-    <label for="comment">Comment:</label>
-    <textarea class="form-control" rows="5" id="comment"></textarea>
-</div> -->
-    
-    
-<!-- Comments section -->    
+</div>      
+    <!-- Comments section template -->  
 <div class="container">
 	<div class="row">
 		<label for="comment">Comments:</label>
     </div>
     <div class="row">
     <div class="col-md-6">
-        <div class="widget-area no-padding blank">
-				<div class="status-upload">
-				<form>
-				<textarea placeholder="Join the discussion.."></textarea>
-				<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i>Share</button>
-				</form>
-								</div>
-							</div>
-						</div>
-        
+{{> posts}}
+</div>
+</div>        
+</div>
+    
+    
+    
+</template>
+    
+<template name="posts">
+    <div class="well col-xs-12 col-xs-offset">
+    <div class="row col-xs-10 col-xs-offset-1">
+        <form class="form-horizontal" role="form" id="postForm">
+            <div class="row">
+            <div class="form-group">
+                <div class="col-xs-14" id="well-post">
+                    <textarea class="form-control required" rows="3" id="inputPost" placeholder="Join the discussion..." maxlength="512"></textarea>
+                    <label id="charRemaining" for="inputPost">{{charsRemaining}}</label>
+                </div>      
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-3">
+                    <!-- Camera -->
+                    <i class="fa fa-camera-retro fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-3">
+                    <!-- Video -->
+                    <i class="fa fa-video-camera fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-3 pull-right">
+                    <button type="submit" class="btn btn-primary">Share</button>
+                </div>
+            </div>
+        </form>  
+    </div>
+    </div>
+    <div class="row col-sm-12 col-sm-offset-0 textPost">
+        <div class="row">
+        {{#each posts}}
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-2 pull-left">
+                        {{> avatar userId=createdBy shape="circle"}}
+                    </div>
+                    <div class="col-sm-3 pull-right">
+                        {{timeDiff (date)}}
+                    </div>
+                </div>
+                <div class="row spacer">
+                    <div class="col-sm-12">
+                        <input class="form-control hidden" type="text" id="edit{{_id}}" value="{{post}}">
+                            <div id="post{{_id}}"> {{post}} </div>
+                    </div>
+                </div>
+                
+                 <div class="row spacer">
+        <div class="col-xs-3">
+            <div class="likeBox">
+                <input type="checkbox" id="like{{_id}}" checked="{{checked (likes.users)}}">
+                <label for="like{{_id}}">
+                    {{likes.totalLikes}}
+                </label>    
+            </div>
+        </div>
+    <div class="col-xs-3">
+    <a class="btn btn-trash">
+        <i class="fa fa-trash" aria-hidden="true"></i>    
+    </a>    
+    </div>
+    {{#if userCreated (createdBy)}}
+        <div class="col-xs-3 editBox">
+            <input type="checkbox" id="editPost{{this._id}}">
+            <label for="editPost{{this._id}}">
+            </label>
+        </div>  
+    {{/if}}
     </div>
 </div>
+        {{/each}}
+</div>
+</div>                
+   
+<style>
+        body {
+            background-image: url(/images/og.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:  cover;
+        }
+</style>
+    
+</template>
+    
+<!-- Tv Show template -->
+<template name="tvshows">
+<div class="row">
+<div class="col-sm-2">
+      </div> 
+
+	  <div class="col-sm-2">
+<input type="text" name="search" placeholder="Search Tv Shows.." >
+		<button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+</div>
+<input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
+<div class="col-sm-2">
+<div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/GOT.jpg" class="img-thumbnail" style="width:100%">
+	   <div class="caption">
+		<p>Game of Thrones</p>
+		</div>
+		</a>
+		</div></div>
+		
+	  
+	<div class="col-sm-2">
+	<div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/barney.png" class="img-thumbnail">
+	   <div class="caption">
+		<p>Barney</p>
+		</div>
+		
+		</a>
+		</div></div>
+	
+	<div class="col-sm-2">
+       <a href="#" target="_self">
+	   <div class="thumbnail">
+       <img  src="/images/community.jpg" class="img-thumbnail" width="300" height="300">
+	   <div class="caption">
+		<p class="title">Community</p>
+		</div>
+		</div> 
+		</a>
+		</div>
+		</div>
+	  
+	 <div class="row">
+	 <div class="col-sm-4">
+      </div>  
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/HTGAWM.jpg" class="img-thumbnail" height="500px" width="500px">
+	   <div class="caption">
+		<p>How to Get Away with Murder</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img  src="/images/sherlock.jpg" class="img-thumbnail">
+	   <div class="caption">
+		<p>Sherlock</p>
+		</div>
+		</a>
+		</div>
+		</div>
+        
+      
+    <div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/daredevil.jpg" class="img-thumbnail">
+	   <div class="caption">
+		<p>Daredevil</p>
+		</div></a></div></div>
+		
+	<div class="col-sm-2">
+	</div>
+	</div>
+</template>
+    
+<!-- Movies template -->
+<template name="movies">
+<div class="row">
+<div class="col-sm-2">
+      </div> 
+
+	  <div class="col-sm-2">
+<input type="text" name="search" placeholder="Search Movies.." >
+		<button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+</div>
+
+<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="info" target="_self">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	  </div>
+	 <div class="row">
+	 
+	 <div class="col-sm-4">
+      </div>  
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+      
+    <div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_self">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+	</div>
+	</div>
 </template>

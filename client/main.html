@@ -5,14 +5,14 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery-comments.js">  </script>
     <title>okayApp</title>
+
 </head>
 
 <body>
-  <h1>Byte Me</h1>
 
     {{> navigation}}
+    
 </body>
 
 <template name="navigation">
@@ -29,19 +29,21 @@
     <div class="collapse navbar-collapse" id="myNavBar">
         <ul class="nav navbar-nav">
             <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-picture"></span> Tv Shows</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-film"></span> Movies</a></li>
-            <li><a href="info"><span class="glyphicon glyphicon-info-sign"></span> Info</a></li>
-            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-user"></span>  Profile </a>
+            <li><a href="tvshows"><span class="glyphicon glyphicon-picture"></span> Tv Shows</a></li>
+            <li><a href="movies"><span class="glyphicon glyphicon-film"></span> Movies</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-user"></span> Profile</a>
  	              <ul class="dropdown-menu">
-                  <li><a href="#">My Profile</a></li>
+                  <li><a href="profile">My Profile</a></li>
                    <li><a href="#">Sign Out</a></li>
                 </ul>
             </li>
        </ul>
     </div>
     </div>
-</nav>
+</nav>   
     
 <footer class="footer">
 <nav class="navbar navbar-default navbar-custom">
@@ -61,11 +63,22 @@
 
 <template name="home">
 <div class="container">
-  <div class="jumbotron">
-    <h1>Welcome</h1>
-    <p>What's on your mind?</p>
-      <span class="glyphicons glyphicons-handshake"></span>
-  </div>       
+<div class="row show-grid">
+<div class="col-lg-8">
+    
 </div>
-    <img src="/images/elephant.jpg" alt="elephant" class="img-circle">
+<div class="col-lg-4">
+    {{> loginButtons}}
+    </div>
+    </div>
+    </div>
+    
+    <style>
+        body {
+            background-image: url(/images/background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:  cover;
+        }
+</style>
 </template>

@@ -90,11 +90,23 @@
        <span class="star"></span>
        <span class="star"></span>
         </span>
-        <p><strong>Likes/Follows</strong></p>
-        <p>700/1000 </p>
-      <button type="button" class="btn btn-info">
+		
+		<!-- new like button
+		
+		<div class="col-xs-3">
+			<div class="likeBox">
+				<input type="checkbox" id="like{{_id}}" checked={{checked(likes.user)} }>
+				<label for="like{{_id}}">
+					{{likes.totalLikes}}
+				</label>
+			</div>
+		-->
+		
+           <span class="likebtn-wrapper" data-identifier="item_1"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+   <!--   <button type="button" class="btn btn-info">
           <span class="glyphicon glyphicon-thumbs-up"></span> Like
-        </button>
+        </button>-->
       </div>      
       <div class="well">
         <p> <img src="http://www.igimages.co.uk/blogimages2010/march/IMDB.jpg" class="img-square" height="95" width="135" alt="Avi"> 

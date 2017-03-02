@@ -1,0 +1,29 @@
+<template name="navigation">
+<nav class ="navbar navbar-default sticky-top">
+    <div class ="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class= "navbar-brand" href="#">Byte Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="tvshows"><span class="glyphicon glyphicon-picture"></span> Tv Shows</a></li>
+            <li><a href="movies"><span class="glyphicon glyphicon-film"></span> Movies</a></li>
+           
+            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-user"></span>  Profile </a>
+ 	              <ul class="dropdown-menu">
+                  <li><a href="profile">My Profile</a></li>
+                 
+                </ul>
+            </li>
+	 <li>{{> loginButtons}}</li>
+       </ul>
+    </div>
+    </div>
+</nav>
+</template>

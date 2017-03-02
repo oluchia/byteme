@@ -1,0 +1,39 @@
+
+
+<template name="home">
+<style>
+body {
+background-image: url(/images/daredevil.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+}
+</style>
+
+<div class="container">
+<div class="row show-grid">
+<div class="col-lg-8">
+ <div class="jumbotron" style="margin-top: 330px;">
+<h1> Byte Me </h1>
+<p>Browse movies and tv shows </p>
+</div>
+    </div>
+<div class="col-lg-4">
+
+{{#if currentUser }}
+{{else}}
+<div class="boxed">
+{{> loginButtons}}
+</div>
+{{/if}}
+
+
+
+</div></div></div>
+</template>
+
+<template name ="options">
+
+{{>loginButtons}}
+
+</template>

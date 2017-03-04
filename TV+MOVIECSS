@@ -1,0 +1,12 @@
+thumbnail{
+	
+	float:right;
+	width:500px;
+	height:300px;
+}
+.title{
+	text-align:center;
+}
+.thumbnail:hover{
+	box-shadow:5px 0px 40px rgba(0,0,0, .2);
+}

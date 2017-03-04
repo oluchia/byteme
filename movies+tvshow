@@ -26,7 +26,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/OISTNB.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Orange is the new black
 		<br>
 		 <span class="rating">
@@ -37,7 +36,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 		
@@ -45,7 +43,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/daredevil.jpg" class="img-thumbnail" width="182" height="268">
-		<div class="caption">
 		<p class="title">Daredevil
 		<br>
 		 <span class="rating">
@@ -56,7 +53,7 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
+		
 		</a></div>
 		</div>
 		
@@ -64,7 +61,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/HTGAWM.jpg" class="img-thumbnail" width="182" height="268">
-		<div class="caption">
 		<p class="title">How to get away with murder
 		<br>
 		 <span class="rating">
@@ -75,7 +71,7 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
+		
 		</a></div>
 		</div>
 	
@@ -83,7 +79,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/sherlock.jpg" class="img-thumbnail" width="182" height="268">
-		<div class="caption">
 		<p class="title">Sherlock
 		<br>
 		 <span class="rating">
@@ -94,7 +89,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 		
@@ -102,7 +96,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/barney.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Barney
 		<br>
 		 <span class="rating">
@@ -113,15 +106,14 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 		
 		<div class="col-sm-3">
-<div class="thumbnail">
+		<div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/community.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
+		
 		<p class="title">Community
 		<br>
 		 <span class="rating">
@@ -132,7 +124,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 
@@ -147,7 +138,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/lalaland.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">La La Land
 		<br>
 		 <span class="rating">
@@ -158,7 +148,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 	  
@@ -166,7 +155,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/logan.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Logan
 		<br>
 		 <span class="rating">
@@ -177,7 +165,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 	
@@ -185,7 +172,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/split.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Split
 		<br>
 		 <span class="rating">
@@ -196,7 +182,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 		
@@ -204,7 +189,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/fantastic.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Fantastic Beasts
 		<br>
 		 <span class="rating">
@@ -215,7 +199,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 	
@@ -223,7 +206,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/badneigh.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Neighbours 2
 		<br>
 		 <span class="rating">
@@ -234,7 +216,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 	
@@ -242,7 +223,6 @@
 <div class="thumbnail">
        <a href="info" target="_blank">
        <img src="/images/mockingjay.jpg" class="img-thumbnail" width="150" height="150">
-		<div class="caption">
 		<p class="title">Mockingjay
 		<br>
 		 <span class="rating">
@@ -253,7 +233,6 @@
        <span class="star"></span>
         </span>
 		</p>
-		</div>
 		</a></div>
 		</div>
 	

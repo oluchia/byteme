@@ -3,31 +3,193 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-//Rating section
-$('.rating span.star').click(function(){
-    var total=$(this).parent().children().length;
-    var clickedIndex=$(this).index();
-
-/*    $('.rating span.star').removeClass('filled');
-        for(var i=clickedIndex;i<total;i++){
-	           $('.rating span.star').eq(i).addClass('filled');
-        } */
-    
-    $('.rating span.star').click(function() {
-       $('.rating span.star').removeClass('active');
-        $(this).addClass('active');
-    })
+/* Info Page helpers and events */
+Template.info.events( function () {
+    var rating = $('#rating').data('userrating');    
 });
 
-// Link functionality
-$(function(){
-		$('.nav a').filter(function(){
-            return this.href==location.href}).parent().addClass('active').siblings().removeClass('active');
+Template.info.events({
+    'click .awesome' : function (event) {
+        var rating = $(event.currentTarget).data('userrating');
+        console.log(rating);
         
-		$('.nav a').click(function(){
-			$(this).parent().addClass('active').siblings().removeClass('active');	
-		});
-	});
+        Session.set('updateId', this._id);
+        var updateId = this._id;
+        console.log(updateId);
+        
+    }
+})
+
+Template.info.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info1.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info1.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info2.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info2.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+
+Template.info3.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info3.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+
+Template.info5.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info5.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info6.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info6.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+
+Template.info7.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info7.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info8.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info8.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+
+Template.info9.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info9.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info10.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info10.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info11.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info11.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+
+Template.info12.events( function () {
+    var rating = $('#rating').data('userrating');
+});
+
+Template.info12.helpers({
+    data : function () {
+        return Data.find();
+    },
+    
+    titleIs : function(title) {
+        return this.title === title;
+}
+});
+//ends
+
+
 
 Template.posts.helpers({
     charsRemaining: function () {

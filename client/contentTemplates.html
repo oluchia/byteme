@@ -194,63 +194,9 @@
   </div>
     </div>
 </template>
-
-<!-- Info page for La La Land template -->
-<template name="info">
-<div class="container">
-    <div class="jumbotron">
-        <img src="/images/lalaland.jpg" alt="movie1" class="img-square">
-    
-    <div class="title">
-        <h1>LA LA LAND</h1> 
-    <div class="desc">
-         Directed by, Damien Chazelle, the movie follows a musician and an aspiring actress who meet and fall in love in Los Angeles, the city known for crushing hopes and breaking hearts.        
-    </div>
-    <div class="desc-left">
-        <p style="font-size: 16px"><strong>Genre:</strong> Comedy, Musical, Drama</p>
-        <p style="font-size: 16px"><strong>Director:</strong> Damien Chazelle</p>
-        <p style="font-size: 16px"><strong>Actor:</strong> Ryan Gosling, Emma Stone</p>
-        
-        <!-- Trailer button -->
-        <div class="block-trailer">
-            <a href="https://youtu.be/0pdqf4P9MB8" target="_blank" class="btn btn-primary">
-                <i class="fa fa-video-camera mr5"></i> Trailer</a>
-        </div>
-    </div>
-    </div>
-    <div class="desc-right">
-        <p style="font-size: 16px"><strong>Duration:</strong> 128min</p>
-        <p style="font-size: 16px"><strong>Release:</strong> 2016</p>
-        <p style="font-size: 16px"><strong>IMDb:</strong> 8.8</p>
-        
-          <!-- Rating section -->    
-   <span class="rating">
-       <span class="star"></span>
-       <span class="star"></span>
-       <span class="star"></span>
-       <span class="star"></span>
-       <span class="star"></span>
-        </span>
-    </div>
-</div>   
-</div>      
-    <!-- Comments section template -->  
-<div class="container">
-	<div class="row">
-		<label for="comment">Comments:</label>
-    </div>
-    <div class="row">
-    <div class="col-md-6">
-{{> posts}}
-</div>
-</div>        
-</div>
-    
-    
-    
-</template>
     
 <template name="posts">
+    {{#if currentUser}}
     <div class="well col-xs-12 col-xs-offset">
     <div class="row col-xs-10 col-xs-offset-1">
         <form class="form-horizontal" role="form" id="postForm">
@@ -275,9 +221,10 @@
                     <button type="submit" class="btn btn-primary">Share</button>
                 </div>
             </div>
-        </form>  
+        </form> 
     </div>
     </div>
+    {{/if}}
     <div class="row col-sm-12 col-sm-offset-0 textPost">
         <div class="row">
         {{#each posts}}
@@ -322,191 +269,178 @@
 </div>
         {{/each}}
 </div>
-</div>                
-   
-<style>
-        body {
-            background-image: url(/images/og.png);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size:  cover;
-        }
-</style>
-    
+</div>                 
 </template>
     
 <!-- Tv Show template -->
 <template name="tvshows">
-<div class="row">
-<div class="col-sm-2">
-      </div> 
-
-	  <div class="col-sm-2">
+<!--Code when using database
+{{#each tvshows}}
+<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info" target="_self">
+       <img src={{image}} class="img-thumbnail" width="150" height="150">
+		<div class="caption">
+		<p class="title_1">{{name}}
+		<br>
+		</p>
+		</div>
+		</a></div>
+		</div>
+		{{/each}}!-->
+    
+        
+    <div class="col-sm-2">
 <input type="text" name="search" placeholder="Search Tv Shows.." >
 		<button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-search"></span> Search
         </button>
 </div>
-<input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
-<div class="col-sm-2">
+		
+<div class="col-sm-3">
 <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/GOT.jpg" class="img-thumbnail" style="width:100%">
-	   <div class="caption">
-		<p>Game of Thrones</p>
-		</div>
-		</a>
-		</div></div>
-		
-	  
-	<div class="col-sm-2">
-	<div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/barney.png" class="img-thumbnail">
-	   <div class="caption">
-		<p>Barney</p>
+       <a href="info7" target="_self">
+       <img src="/images/OISTNB.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Orange is the new black
+		<br>
+           {{> starsRating rating=4.5 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
 		
-		</a>
-		</div></div>
+		<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info11" target="_self">
+       <img src="/images/daredevil.jpg" class="img-thumbnail" width="182" height="268">
+		<p class="title_1">Daredevil
+		<br>
+		  {{> starsRating rating=4 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		
+		</a></div>
+		</div>
+		
+		<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info12" target="_self">
+       <img src="/images/HTGAWM.jpg" class="img-thumbnail" width="182" height="268">
+		<p class="title_1">How to get away with murder
+		<br>
+		  {{> starsRating rating=4 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		
+		</a></div>
+		</div>
 	
-	<div class="col-sm-2">
-       <a href="#" target="_self">
-	   <div class="thumbnail">
-       <img  src="/images/community.jpg" class="img-thumbnail" width="300" height="300">
-	   <div class="caption">
-		<p class="title">Community</p>
-		</div>
-		</div> 
-		</a>
-		</div>
-		</div>
-	  
-	 <div class="row">
-	 <div class="col-sm-4">
-      </div>  
-	  
-	<div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/HTGAWM.jpg" class="img-thumbnail" height="500px" width="500px">
-	   <div class="caption">
-		<p>How to Get Away with Murder</p>
-		</div>
-		</a>
-		</div>
+		<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info9" target="_self">
+       <img src="/images/sherlock.jpg" class="img-thumbnail" width="182" height="268">
+		<p class="title_1">Sherlock
+		<br>
+		 {{> starsRating rating=5 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
 		
-	<div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img  src="/images/sherlock.jpg" class="img-thumbnail">
-	   <div class="caption">
-		<p>Sherlock</p>
+		<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info8" target="_self">
+       <img src="/images/barney.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Barney
+		<br>
+		  {{> starsRating rating=2 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
-		</a>
-		</div>
-		</div>
-        
-      
-    <div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/daredevil.jpg" class="img-thumbnail">
-	   <div class="caption">
-		<p>Daredevil</p>
-		</div></a></div></div>
 		
-	<div class="col-sm-2">
-	</div>
-	</div>
-</template>
-    
-<!-- Movies template -->
-<template name="movies">
-<div class="row">
-<div class="col-sm-2">
-      </div> 
+		<div class="col-sm-3">
+		<div class="thumbnail">
+       <a href="info10" target="_self">
+       <img src="/images/community.jpg" class="img-thumbnail" width="150" height="150">
+		
+		<p class="title_1">Community
+		<br>
+		  {{> starsRating rating=3.5 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
+		</div>
 
-	  <div class="col-sm-2">
+		
+</template>
+
+
+<template name="movies">
+    <div class="col-sm-2">
 <input type="text" name="search" placeholder="Search Movies.." >
 		<button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-search"></span> Search
         </button>
 </div>
-
-<div class="col-sm-2">
-      <div class="thumbnail">
+   
+<div class="col-sm-3">
+<div class="thumbnail">
        <a href="info" target="_self">
-       <img src="/images/lalaland.jpg" class="img">
-	   <div class="caption">
-		<p>La La Land</p>
-		</div>
-		</a>
-		</div>
+       <img src="/images/lalaland.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">La La Land
+		<br>
+		  {{> starsRating rating=4 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
 	  
-	<div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/lalaland.jpg" class="img">
-	   <div class="caption">
-		<p>La La Land</p>
-		</div>
-		</a>
-		</div>
+	<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info1" target="_self">
+       <img src="/images/logan.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Logan
+		<br>
+		  {{> starsRating rating=5 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
 	
-	<div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/lalaland.jpg" class="img">
-	   <div class="caption">
-		<p>La La Land</p>
-		</div>
-		</a>
-		</div>
-		</div>
-	  </div>
-	 <div class="row">
-	 
-	 <div class="col-sm-4">
-      </div>  
-	  
-	<div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/lalaland.jpg" class="img">
-	   <div class="caption">
-		<p>La La Land</p>
-		</div>
-		</a>
-		</div>
+		<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info2" target="_self">
+       <img src="/images/split.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Split
+		<br>
+		  {{> starsRating rating=3.5 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
 		
-	<div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/lalaland.jpg" class="img">
-	   <div class="caption">
-		<p>La La Land</p>
+			<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info3" target="_self">
+       <img src="/images/fantastic.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Fantastic Beasts
+		<br>
+		 {{> starsRating rating=4 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
-		</a>
+	
+				<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info5" target="_self">
+       <img src="/images/badneigh.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Neighbours 2
+		<br>
+		  {{> starsRating rating=2 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
+	
+			<div class="col-sm-3">
+<div class="thumbnail">
+       <a href="info6" target="_self">
+       <img src="/images/mockingjay-2.jpg" class="img-thumbnail" width="150" height="150">
+		<p class="title_1">Mockingjay
+		<br>
+		 {{> starsRating rating=2 star='\\f005' class='mystar'  size="sm"}} 
+		</p>
+		</a></div>
 		</div>
-      
-    <div class="col-sm-2">
-      <div class="thumbnail">
-       <a href="#" target="_self">
-       <img src="/images/lalaland.jpg" class="img">
-	   <div class="caption">
-		<p>La La Land</p>
-		</div>
-		</a>
-		</div>
-		</div>
-		
-	<div class="col-sm-2">
-	</div>
-	</div>
 </template>

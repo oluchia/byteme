@@ -3,46 +3,41 @@ html {
     min-height: 100%;
 }
 
+/* CSS of TV Shows and Movies */
+thumbnail {
+	
+	float:right;
+	width:500px;
+	height:300px;
+}
+
+.title_1 {
+	text-align:center;
+}
+
+.thumbnail:hover {
+	box-shadow:5px 0px 40px rgba(0,0,0,.2);
+}
 
 /* CSS of Rating Section */
-
-.rating {
+.awesome {
+    font-family: FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    display:inline-block;
     unicode-bidi:bidi-override;
     direction:rtl;
     font-size:30px;
     float: left;
 }
-.rating span.star {
-    font-family:FontAwesome;
-    font-weight:normal;
-    font-style:normal;
-    display:inline-block;
-}
-.rating span.star:hover {
-    cursor:pointer;
-}
-.rating span.star:before {
-    content:"\f006";
-    padding-right:5px;
-    color:#999999;
-}
-.rating span.star:hover:before, 
-.rating span.star:hover~span.star:before,
-.rating span.star.active:before,
-.rating span.star.active~span.star:before {
-    content:"\f005";
-    color:#e3cf7a;
+
+.awesome : hover {
+    cursor: pointer;
 }
 
-.rating span.star {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-
-span.star.filled:before { 
-    color:#e3cf7a; 
-    content:"\f005";
+.mystar {
+    font-family: FontAwesome;
+    align-self: center;
 }
 
 /* CSS declarations go here */

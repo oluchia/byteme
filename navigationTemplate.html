@@ -1,3 +1,4 @@
+
 <template name="navigation">
 <nav class ="navbar navbar-default sticky-top">
     <div class ="container-fluid">
@@ -7,33 +8,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class= "navbar-brand" href="#">Byte Me</a>
+        <a class= "navbar-brand" href="/">Byte Me</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavBar">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+<ul class="nav navbar-nav">
+            <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home </a></li>
             <li><a href="/tvshows"><span class="glyphicon glyphicon-picture"></span> Tv Shows </a></li>
             <li><a href="/movies"><span class="glyphicon glyphicon-film"></span> Movies </a></li>
+{{#if currentUser }}
+<li><a href="profile">My Profile</a></li>     
+{{/if}}
 
 </ul>
+
 <ul class="nav navbar-nav navbar-right">
-<li><form><input type="text" onsubmit="search(search)"  style="width:500px;" name="search" placeholder="Search All..." ></form></li>
+
+<li><form class="form-inline my-2 my-lg-0">
+	<input class="form-control mr-sm-2"   type="text" placeholder="Search">
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form></li>
 
 {{#if currentUser }}
-            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-user"></span>  Profile </a>
- 	      <ul class="dropdown-menu">
- 		<li><a href="profile">My Profile</a></li>                 
-                <li><a href="#">Sign Out</a></li>
-              </ul>
-</li>
-<li>
-{{> avatar user=this shape="circle"}} 
-</li> 
+	<li onclick="Meteor.logout()">
+	<a href="/">Log Out</a>
+	</li> 
+	<li>
+	{{> avatar user=this shape="circle"}} 
+	</li> 
 {{/if}}
-</ul>
-    </div>
-    </div>
-</nav>
-    
 
+</ul>
+</div></div>
+</nav>
+   
 </template>
+
+

@@ -1,0 +1,187 @@
+<template name ="profile">
+
+   {{> navigation}}
+<html>
+<head>
+
+</head>
+<body>
+<style>
+body {
+    background-color: #6f5499;
+}
+</style>
+  
+<div class="container text-center">    
+<style>
+
+</style>
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#">My Profile</a></p>
+        <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="well">
+        <p><a href="#">Interests</a></p>
+        <p>
+          <span class="label label-default">Horror</span>
+          <span class="label label-primary">Crime</span>
+          <span class="label label-success">Spin offs</span>
+          <span class="label label-info">Terrible movies are still good</span>
+          <span class="label label-warning">Cringe</span>
+          <span class="label label-danger">Mystery</span>
+        </p>
+      </div>
+   <!--   <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Ey!</strong></p>
+        People are looking at your profile. Find out who.
+      </div>-->
+  <p> <small><cite title="Galway, Ireland">Galway, Ireland ( USERNAME LOCATION) <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small></p>
+
+      <p><i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br /></p>
+
+     <!--  <p><i class="glyphicon glyphicon-globe"></i><a href="https://google.ie" target="_blank">Google(any website , edit later)</a>
+                            <br /></p>-->
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <center contenteditable="true">Recently comments:</center>
+             <!-- <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>      -->
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <!-- database post comments-->
+	  
+	  {{>posts}}
+	   <div class="row col-sm-12 col-sm-offset-0 textPost">
+        <div class="row">
+        {{#each posts}}
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-2 pull-left">
+                        {{> avatar userId=createdBy shape="circle"}}
+                    </div>
+                    <div class="col-sm-3 pull-right">
+                        {{timeDiff (date)}}
+                    </div>
+                </div>
+                <div class="row spacer">
+                    <div class="col-sm-12">
+                        <input class="form-control hidden" type="text" id="edit{{_id}}" value="{{post}}">
+                            <div id="post{{_id}}"> {{post}} </div>
+                    </div>
+                </div>
+                
+                 <div class="row spacer">
+        <div class="col-xs-3">
+            <div class="likeBox">
+                <input type="checkbox" id="like{{_id}}" checked="{{checked (likes.users)}}">
+                <label for="like{{_id}}">
+                    {{likes.totalLikes}}
+                </label>    
+            </div>
+        </div>
+    <div class="col-xs-3">
+    <a class="btn btn-trash">
+        <i class="fa fa-trash" aria-hidden="true"></i>    
+    </a>    
+    </div>
+    {{#if userCreated (createdBy)}}
+        <div class="col-xs-3 editBox">
+            <input type="checkbox" id="editPost{{this._id}}">
+            <label for="editPost{{this._id}}">
+            </label>
+        </div>  
+    {{/if}}
+    </div>
+</div>
+        {{/each}}
+</div>
+</div>                 
+	  
+	
+	  
+	  
+	  
+
+
+	<!-- database comments-->
+	{{#each movieComment}}
+	    <div class="row">
+		
+        <div class="col-sm-3">
+          <div class="well">
+           <p>{{movieName}}</p>
+           <img src={{image}} class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>{{comment}}</p>
+          </div>
+        </div>
+	
+      </div>
+{{/each}}
+	  <!--  edits -->
+
+      
+    
+    
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>USER RATING:</p>
+               <!-- Rating section -->    
+   <span class="rating">
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+        </span>
+
+
+
+       <span class="likebtn-wrapper" data-identifier="item_1"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+   <!--   <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button>-->
+      </div>      
+      <div class="well">
+        <p> <img src="http://www.igimages.co.uk/blogimages2010/march/IMDB.jpg" class="img-square" height="95" width="135" alt="Avi"> 
+		<a href="http://www.imdb.com/" target="_blank">IMDB</a>
+		</p>
+      </div>
+      <div class="well">
+        <p>YOUR ADS COULD BE HERE</p>
+		 <p>Contact us if interested</p>
+		 <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click Here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{>footer}}
+</body>
+</html>
+
+
+
+
+
+</template>

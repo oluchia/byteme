@@ -1,0 +1,94 @@
+<!--contact us-->
+<template name="contactUs">
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="container">
+                    <div class="container">
+                        <h1><b>Contact us</b></h1>
+                        <hr>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <label for="name">Name</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" id="name" class="form-control" placeholder="Enter your name here">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <label for="email">E-mail</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" id="email" class="form-control" placeholder="Enter your e-mail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <label for="question">Question</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" id="question" class="form-control" placeholder="Enter your query">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <h4 class="text-center">We are sorry if you are experiecing any problems. We will try our best to reach you ASAP. </h4>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <button class="btn btn-primary" onclick="sendMail(); return false">Submit request</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-3">
+                                            <h4><b>Or you can reach us via</b></h4>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <div class="social row">
+                                                <div class="btn-group btn-group-justified">
+                                                    <a href="#" class="btn btn-primary"><span class="fa fa-2x fa-facebook"></span></a>
+                                                    <a href="#" class="btn btn-danger"><span class="fa fa-2x fa-google"></span></a>
+                                                    <a href="#" class="btn btn-primary"><span class="fa fa-2x fa-linkedin"></span></a>
+                                                    <a href="#" class="btn btn-info"><span class="fa fa-2x fa-twitter"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-xs-3 col-xs-offset-5 col-md-3 col-md-offset-5">- OR -</label>
+                                    </div>
+                                    <div class="form-group row">
+                                            <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-3">
+                                            <h4><b>Through email</b><br></h4>
+											</div>
+										<div class="col-md-8 col-md-offset-2">
+                                            <p><ul><li><span class="glyphicon glyphicon-envelope"></span> <b>Project Leader</b>: oluchiaxxx@gmail.com</li>
+													<li><span class="glyphicon glyphicon-envelope"></span> <b>Cool Person:</b> mattm2812@gmail.com</li></ul></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</template>

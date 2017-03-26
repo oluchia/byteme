@@ -1,0 +1,13 @@
+	 <div class="col-sm-3 col-md-3">
+        <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" id="mySearch">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" onClick="myFunction(mySearch)"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </div>
+       </ul>
+    </div>
+    </div>

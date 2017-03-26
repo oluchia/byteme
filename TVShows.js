@@ -1,0 +1,1 @@
+TVShows = new Mongo.Collection('tvshows');

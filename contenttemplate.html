@@ -1,14 +1,285 @@
+
+<template name="resultsPage">
+{{#each tvshows}}
+
+{{/each}}
+{{#each movies}}
+
+{{/each}}
+
+</template>
+
+<template name="home">
+<style>
+body {
+background-image: url(/images/daredevil.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+}
+
+</style>
+
+<div class="container">
+<div class="row show-grid">
+<div class="col-lg-8">
+<br><br><br><br>
+<p style="font-size:60px; color:white;">Byte Me</p>
+<p style="font-size:36px; color:white;">Browse movies and tv shows</p>
+    </div>
+
+<div class="col-lg-4">
+{{#if currentUser }}
+	<p style="font-size:15px; color:white;">
+	<br><br>
+	Welcome back!</p>
+{{else}}
+	{{ > loginButtons }}
+{{/if}}
+</div>
+</div></div>
+</template>
+
+
+
+<template name="navigation">
+<nav class ="navbar navbar-default sticky-top">
+    <div class ="container-fluid">
+    <div class="navbar-header">
+
+<!-- The minimised view 3-line dropdown -->
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+</a>
+<ul class="dropdown-menu" style=" top:10; left:75%;">
+<li><a href="/tvshows"><span class="glyphicon glyphicon-picture"></span>   Tv Shows </a></li>
+<li ><a href="/movies"><span class="glyphicon glyphicon-film"></span>   Movies </a></li>
+{{#if currentUser }}
+<li><a href="profile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>     
+<li> ---------------------------------- </li>
+<li onclick="Meteor.logout()"><a href="/">Log Out</a></li> 
+{{/if}}
+</ul>
+
+        <a class= "navbar-brand" href="/">Byte Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavBar">
+<ul class="nav navbar-nav"> 
+<!--<ul class="nav nav-justified">-->
+<!-- style="font-size:20px;" -->
+            <li><a href="/"><span class="glyphicon glyphicon-home"></span>   Home </a></li>
+            <li><a href="/tvshows"><span class="glyphicon glyphicon-picture"></span>   Tv Shows </a></li>
+            <li><a href="/movies"><span class="glyphicon glyphicon-film"></span>   Movies </a></li>
+{{#if currentUser }}
+<li><a href="profile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>     
+{{/if}}
+
+
+<li><form class="form-inline my-2 my-lg-0">
+	<input class="form-control mr-sm-2"   type="text" placeholder="Search" id="srchQuery">
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="searchBar(srchQuery)">Search</button>
+</form></li>
+
+{{#if currentUser }}
+	<li onclick="Meteor.logout()">
+	<a href="/">Log Out</a>
+	</li> 
+	
+{{/if}}
+
+</ul>
+</div></div>
+</nav>
+    
+
+</template>
+
+
+
+
+<template name="tvshows">
+<div class="row">
+<div class="col-sm-2">
+      </div> 
+
+	  <div class="col-sm-2">
+<input type="text" name="search" placeholder="Search Tv Shows.." >
+		<button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+</div>
+<input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
+<div class="col-sm-2">
+<div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/GOT.jpg" class="img-thumbnail" style="width:100%">
+	   <div class="caption">
+		<p>Game of Thrones</p>
+		</div>
+		</a>
+		</div></div>
+		
+	  
+	<div class="col-sm-2">
+	<div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/barney.png" class="img-thumbnail">
+	   <div class="caption">
+		<p>Barney</p>
+		</div>
+		
+		</a>
+		</div></div>
+	
+	<div class="col-sm-2">
+       <a href="#" target="_blank">
+	   <div class="thumbnail">
+       <img  src="/images/community.jpg" class="img-thumbnail" width="300" height="300">
+	   <div class="caption">
+		<p class="title">Community</p>
+		</div>
+		</div> 
+		</a>
+		</div>
+		</div>
+	  
+	 <div class="row">
+	 <div class="col-sm-4">
+      </div>  
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/HTGAWM.jpg" class="img-thumbnail" height="500px" width="500px">
+	   <div class="caption">
+		<p>How to Get Away with Murder</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img  src="/images/sherlock.jpg" class="img-thumbnail">
+	   <div class="caption">
+		<p>Sherlock</p>
+		</div>
+		</a>
+		</div>
+		</div>
+        
+      
+    <div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="#" target="_blank">
+       <img src="/images/daredevil.jpg" class="img-thumbnail">
+	   <div class="caption">
+		<p>Daredevil</p>
+		</div></a></div></div>
+		
+	<div class="col-sm-2">
+	</div>
+	</div>
+</template>
+<template name="movies">
+<div class="row">
+<div class="col-sm-2">
+      </div> 
+
+	  <div class="col-sm-2">
+<input type="text" name="search" placeholder="Search Movies.." >
+		<button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+</div>
+
+<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="/info" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="/info" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="/info" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+	  </div>
+	 <div class="row">
+	 
+	 <div class="col-sm-4">
+      </div>  
+	  
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="/info" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="/info" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+      
+    <div class="col-sm-2">
+      <div class="thumbnail">
+       <a href="/info" target="_blank">
+       <img src="/images/lalaland.jpg" class="img">
+	   <div class="caption">
+		<p>La La Land</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		
+	<div class="col-sm-2">
+	</div>
+	</div>
+</template>
+
+
 <template name="aboutUs">
 <div class="container">
-  <div class="jumbotron" style="float:left">
-	<h2><b>About Us</b></h2>
+  <div class="jumbotron">
+    <h1>About Us</h1>
       <p>Owners of this app are a sexy group of people</p>
-      <span class="glyphicons glyphicons-handshake"></span>
-  </div>
-  
-  <div class="jumbotron" style="float:right">
-	<h2><b>Team Members</b></h2>
-      <p>We're all really awesome</p>
       <span class="glyphicons glyphicons-handshake"></span>
   </div>
 </div> 
@@ -18,44 +289,27 @@
 <div class="container">
   <div class="jumbotron">
     <h1>Contact Us</h1>
-	<br>
-    <h3>Queries:</h3>
-	
-	<form>
-  <div class="form-group">
-    <label for="question">Enter your question:</label>
-    <input type="question" class="form-control" id="question">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+    <p>Our info - below</p>
       <span class="glyphicons glyphicons-handshake"></span>
-	 <br>
-	<h3>Other forms of contact:</h3>
-	<ul><li>email one</li>
-		<li>email two</li>
-	</ul>
   </div>
 </div>
 </template>
 
 <template name="findUs">
 <div class="container">
-  <div class="jumbotron" style="float:left">
+  <div class="jumbotron">
     <h1>Find Us</h1>
-    <p>Based in NUI Galway.</p>
+    <p>Located in the underrated college that is NUI Galway.</p>
       <span class="glyphicons glyphicons-handshake"></span>
   </div>
-  <div class="jumbotron" style="float:right">
-	<iframe
+</div>
+<iframe
   width="600"
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD08T2oBdJybZ49h1jd3dMQ6AaZafvyVr8
     &q=National+University+Of+Ireland,Galway" allowfullscreen>
 </iframe>
-  </div>
-</div>
-
 </template>
 
 <template name="info">
@@ -72,15 +326,31 @@
         <p style="font-size: 16px"><strong>Genre:</strong> Comedy, Musical, Drama</p>
         <p style="font-size: 16px"><strong>Director:</strong> Damien Chazelle</p>
         <p style="font-size: 16px"><strong>Actor:</strong> Ryan Gosling, Emma Stone</p>
-    
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href="https://youtu.be/0pdqf4P9MB8" target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
     </div>
     </div>
     <div class="desc-right">
         <p style="font-size: 16px"><strong>Duration:</strong> 128min</p>
         <p style="font-size: 16px"><strong>Release:</strong> 2016</p>
         <p style="font-size: 16px"><strong>IMDb:</strong> 8.8</p>
+        
+          <!-- Rating section -->    
+   <span class="rating">
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+        </span>
     </div>
-</div>
+        
+  
+</div>   
 </div>
     
 <!--<div class="comment-area">
@@ -88,6 +358,8 @@
     <textarea class="form-control" rows="5" id="comment"></textarea>
 </div> -->
     
+    
+<!-- Comments section -->    
 <div class="container">
 	<div class="row">
 		<label for="comment">Comments:</label>
@@ -106,4 +378,197 @@
         
     </div>
 </div>
+</template>
+
+<template name="profile">
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>                        
+       </button>
+       <a class="navbar-brand" href="#">ByteMe</a>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="#">Home</a></li>
+         <li><a href="#">Favourites</a></li>
+       </ul>
+  
+ 	  <ul class="nav navbar-nav navbar-right">
+ 		<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Edit</a></li>
+       </ul>
+ 	  
+ 	  <div class="dropdown">
+   <ul class="nav navbar-nav navbar-right">
+     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">My Account
+     <span class="glyphicon glyphicon-user"></span> </button>
+     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+       <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> <span class="glyphicon glyphicon-cog"></span> Edit</a></li>
+
+ 	  <li><a href="#">Settings</a></li>
+       <li><a href="#">Log Out</a></li>
+ 	  <li><a href="#">Help</a></li>
+       <li><a href="#">Report bug</a></li>	  
+ 	  
+       <form class="navbar-form navbar-right" role="search">
+         <div class="form-group input-group">
+           <input type="text" class="form-control" placeholder="Search..">
+           <span class="input-group-btn">
+             <button class="btn btn-default" type="button">
+               <span class="glyphicon glyphicon-search"></span>
+             </button>
+           </span>        
+         </div>
+      </form>
+   <ul class="nav navbar-nav navbar-right">
+ 		<li><a href="#">Sign out </a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>  
+       </ul>
+    </ul></ul></div>
+   </div> </div>
+ </nav>
+   
+ <div class="container text-center">    
+   <div class="row">
+     <div class="col-sm-3 well">
+       <div class="well">
+         <p><a href="#">My Profile</a></p>
+         <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+       </div>
+       <div class="well">
+         <p><a href="#">Interests</a></p>
+         <p>
+           <span class="label label-default">News</span>
+           <span class="label label-primary">W3Schools</span>
+           <span class="label label-success">Labels</span>
+           <span class="label label-info">Football</span>
+           <span class="label label-warning">Gaming</span>
+           <span class="label label-danger">Friends</span>
+         </p>
+       </div>
+    <!--   <div class="alert alert-success fade in">
+         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+         <p><strong>Ey!</strong></p>
+         People are looking at your profile. Find out who.
+       </div>-->
+       <p> <small><cite title="Galway, Ireland">Galway, Ireland ( USERNAME LOCATION) <i class="glyphicon glyphicon-map-marker">
+                         </i></cite></small></p>
+       <p><i class="glyphicon glyphicon-envelope"></i>email@example.com
+                             <br /></p>
+       <p><i class="glyphicon glyphicon-globe"></i><a href="https://google.ie">Google(any website , edit later)</a>
+                             <br /></p>
+     </div>
+     <div class="col-sm-7">
+     
+       <div class="row">
+         <div class="col-sm-12">
+           <div class="panel panel-default text-left">
+             <div class="panel-body">
+               <center contenteditable="true">Recently comments:</center>
+              <!-- <button type="button" class="btn btn-default btn-sm">
+                 <span class="glyphicon glyphicon-thumbs-up"></span> Like
+               </button>      -->
+             </div>
+           </div>
+         </div>
+       </div>
+ 	  
+ 	<!-- database comments-->
+ 	
+ 	  {{#each movieComment}}
+ 	    <div class="row">
+ 		
+         <div class="col-sm-3">
+           <div class="well">
+           <p>{{movieName}}</p>
+            <img src={{image}} class="img-circle" height="55" width="55" alt="Avatar">
+           </div>
+         </div>
+         <div class="col-sm-9">
+           <div class="well">
+             <p>{{comment}}</p>
+           </div>
+         </div>
+ 	
+       </div>
+ {{/each}}
+ 
+ 	  <!--  edits -->
+       
+       <div class="row">
+         <div class="col-sm-3">
+           <div class="well">
+            <p>MOVIE#1</p>
+            <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           </div>
+         </div>
+         <div class="col-sm-9">
+           <div class="well">
+             <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3">
+           <div class="well">
+            <p>MOVIE#2</p>
+            <img src="http://www.orenairport.ru/userfiles/images/novoe/question.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           </div>
+         </div>
+         <div class="col-sm-9">
+           <div class="well">
+             <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3">
+           <div class="well">
+            <p>MOVIE#3</p>
+            <img src="http://previews.123rf.com/images/kharlamova/kharlamova1111/kharlamova111100072/11196349-Man-sitting-on-a-question-mark-3d-render-Stock-Photo.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           </div>
+         </div>
+         <div class="col-sm-9">
+           <div class="well">
+             <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3">
+           <div class="well">
+            <p>TV SHOW #1</p>
+            <img src="http://images.clipartpanda.com/question-yikA5pBiE.jpeg" class="img-circle" height="55" width="55" alt="Avatar">
+           </div>
+         </div>
+         <div class="col-sm-9">
+           <div class="well">
+             <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+           </div>
+         </div>
+       </div>     
+     </div>
+     <div class="col-sm-2 well">
+       <div class="thumbnail">
+         <p>USER RATING:</p>
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/3.5_stars.svg/1280px-3.5_stars.svg.png" alt="Rating" width="400" height="300">
+         <p><strong>Rating</strong></p>
+         <p>700/1000 </p>
+         <button class="btn btn-primary">Upvote</button>
+       </div>      
+       <div class="well">
+         <p>YOUR ADS COULD BE HERE </p>
+       </div>
+       <div class="well">
+         <p>YOUR ADS COULD BE HERE </p>
+       </div>
+     </div>
+   </div>
+ </div>
+
 </template>

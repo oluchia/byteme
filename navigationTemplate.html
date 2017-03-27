@@ -3,44 +3,65 @@
 <nav class ="navbar navbar-default sticky-top">
     <div class ="container-fluid">
     <div class="navbar-header">
+
+<!-- The minimised view 3-line dropdown -->
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class= "navbar-brand" href="/">Byte Me</a>
+</a>
+<ul class="dropdown-menu" style=" top:10; left:75%;">
+<li><a href="/tvshows"><span class="glyphicon glyphicon-picture"></span>   Tv Shows </a></li>
+<li ><a href="/movies"><span class="glyphicon glyphicon-film"></span>   Movies </a></li>
+{{#if currentUser }}
+<li><a href="profile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>     
+<li class="divider"></li>
+<li onclick="Meteor.logout()"><a href="/">Log Out</a></li> 
+{{/if}}
+</ul>
+
+    <a class= "navbar-brand" href="/">Byte Me</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavBar">
-<ul class="nav navbar-nav">
-            <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home </a></li>
-            <li><a href="/tvshows"><span class="glyphicon glyphicon-picture"></span> Tv Shows </a></li>
-            <li><a href="/movies"><span class="glyphicon glyphicon-film"></span> Movies </a></li>
+
+	<ul class="nav navbar-nav" style="text-align:justify;"> 
+<!--<ul class="nav nav-justified">-->
+<!-- style="font-size:20px;" -->
+
+            <li><a href="/"><span class="glyphicon glyphicon-home"></span>   Home </a></li>
+            <li><a href="/tvshows"><span class="glyphicon glyphicon-picture"></span>   Tv Shows </a></li>
+            <li><a href="/movies"><span class="glyphicon glyphicon-film"></span>   Movies </a></li>
 {{#if currentUser }}
-<li><a href="profile">My Profile</a></li>     
+<li><a href="profile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>     
 {{/if}}
-
 </ul>
-
 <ul class="nav navbar-nav navbar-right">
+<li>
+<form class="navbar-form navbar-left">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
 
-<li><form class="form-inline my-2 my-lg-0">
-	<input class="form-control mr-sm-2"   type="text" placeholder="Search">
-	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form></li>
-
+</li>
 {{#if currentUser }}
-	<li onclick="Meteor.logout()">
+	<li onclick="Meteor.logout()" style="left:80%;">
 	<a href="/">Log Out</a>
 	</li> 
-	<li>
-	{{> avatar user=this shape="circle"}} 
-	</li> 
+	
 {{/if}}
 
-</ul>
-</div></div>
+	</ul>
+	</div>
+</div>
 </nav>
-   
 </template>
 
 

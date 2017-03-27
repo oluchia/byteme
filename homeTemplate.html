@@ -7,6 +7,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size:  cover;
 }
+
 </style>
 
 <div class="container">
@@ -16,14 +17,16 @@ background-size:  cover;
 <p style="font-size:60px; color:white;">Byte Me</p>
 <p style="font-size:36px; color:white;">Browse movies and tv shows</p>
     </div>
+
 <div class="col-lg-4">
-
 {{#if currentUser }}
+	<p style="font-size:15px; color:white;">
+	<br><br>
+	Welcome back!</p>
 {{else}}
-<div class="boxed">
-{{> loginButtons}}
-</div>
+	{{ > loginButtons }}
 {{/if}}
-
-</div></div></div>
+</div>
+</div></div>
 </template>
+

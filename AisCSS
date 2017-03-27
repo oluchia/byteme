@@ -1,0 +1,10 @@
+
+.login-buttons-dropdown-align-{
+padding: 30px;
+margin:60px;
+
+ width:286px;
+ height:350px;
+ background:white;
+
+}

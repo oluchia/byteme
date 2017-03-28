@@ -1,0 +1,117 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-comments.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    function myFunction(input) {
+
+        var query = input.value;
+        var data = TvShows.findOne({name : "Barney"});
+        console.log(data);
+    }
+    
+    </script>
+    <title>okayApp</title>
+
+</head>
+
+<body>
+
+    {{> navigation}}
+
+</body>
+
+<template name="navigation">
+<nav class ="navbar navbar-default navbar-sticky-top">
+    <div class ="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class= "navbar-brand" href="#">Agora</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav">
+            {{#if currentUser}}
+            {{else}}
+            <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            {{/if}}
+            <li><a href="tvshows"><span class="glyphicon glyphicon-picture"></span> Tv Shows</a></li>
+            <li><a href="movies"><span class="glyphicon glyphicon-film"></span> Movies</a></li>
+            
+            {{#if currentUser }}
+            <li><a href="profile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>     
+            {{/if}}
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+                <li><form class="form-inline">
+	               <input class="form-control" id="input"  type="text" placeholder="Search...">
+                    <button onClick="myFunction(input)" class="btn btn-outline-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </form></li>
+
+            {{#if currentUser }}
+	       <li onclick="Meteor.logout()">
+	           <a href="/">Log Out</a>
+	       </li> 
+	<li>
+	{{> avatar user=this shape="circle"}} 
+	</li> 
+            {{/if}}
+
+        </ul>
+</div>
+</div>
+</nav>
+
+
+<footer class="footer">
+<nav class="navbar navbar-default navbar-custom">
+<div class="container-fluid">
+    <p class="pull-left">&copy; 2017 Agora. All Rights Reserved.</p>
+    <div class="pull-right">
+        <ul class="list-inline">
+            <li><a href="aboutUs"><span class="glyphicon glyphicon-pencil"></span> About Us</a></li>
+            <li><a href="contactUs"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+            <li><a href="findUs"><span class="glyphicon glyphicon-search"></span> Find Us</a></li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+    </footer>
+</template>
+
+<template name="home">
+<div class="container">
+<div class="row show-grid">
+<div class="col-lg-8">
+<br><br><br><br>
+<p style="font-size:60px; color:white;">Agora</p>
+<p style="font-size:36px; color:white;">Discover what people are saying about your favourite movies and tv shows</p>
+    </div>
+<div class="col-lg-4">
+
+{{#if currentUser }}
+{{else}}
+<div class="boxed">
+{{> loginButtons}}
+</div>
+{{/if}}
+    </div>
+    </div>
+    </div>
+    <style>
+        body {
+            background-image: url(/images/background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:  cover;
+        }
+</style>
+</template>

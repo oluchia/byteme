@@ -216,3 +216,82 @@ footer a:hover{
     background-color: #ffffff;
   }
 }
+
+
+
+/*home page login*/
+
+#login-buttons{
+padding:15%;
+}
+
+.login-text-and-button{
+font-size:26px;
+}
+
+#login-buttons .login-image {
+top: 6px;
+width:26px;
+height:26px;
+}
+
+#login-buttons-image-facebook{
+background-size:contain;
+}
+
+#login-buttons-image-google{
+background-size:contain;
+}
+
+#login-buttons-image-twitter{
+background-size:contain;
+}
+
+
+#login-buttons-google{
+height:40px;
+}
+#login-buttons-facebook{
+height:40px;
+}
+#login-buttons-twitter{
+height:40px;
+}
+
+#login-buttons .login-button {
+    position: relative;
+font-size:20px;
+}
+#login-email{
+height:40px;
+}
+#login-password{
+height:40px;
+}
+#login-email-label{
+font-size:20px;
+}
+#login-password-label{
+font-size:20px;
+}
+.or-text{
+font-size:18px;
+}
+.accounts-dialog .login-button-form-submit {
+    margin-top: 12px;
+}
+
+.accounts-dialog .login-button {
+width: auto;
+height:40px;
+margin-bottom: 10px;
+}
+
+.accounts-dialog{
+padding: 40px;
+width:340px;
+border-radius:0px;
+}
+
+
+

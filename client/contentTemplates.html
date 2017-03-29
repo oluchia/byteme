@@ -1,0 +1,432 @@
+<!-- About Us template -->
+<template name="aboutUs"> 
+<div class="container">
+  <div class="jumbotron" id="makeTransparent" style="float:left">
+	<h1><b>About Us</b></h1><br>
+      <p>Agora is a website dedicated to providing you with <br>
+	  a place to easily and quickly rate your favourite<br>
+	  TV shows and movies, and to allow you to<br>
+	  view the ratings of a multitude of different people.<br><br>
+	  We at Agora started off at NUI Galway and have<br>
+	  continued growing to this day.
+	   </p>
+	   
+	<div>
+ 	   <img src="/images/campus.jpg" height="250px" width="550px"><br>
+	</div>
+</div>
+  
+  <div class="jumbotron" id="makeTransparent" style="float:right">
+	<h2><b>Team Members</b></h2><br>
+      <h4><b>Oluchi Anyabuike</b> - Project leader</h4>
+	  <h4><b>Matt Moran</b> - Public relations</h4>
+	  <h4><b>Joe Gleeson</b> - Server maintenance</h4>
+	  <h4><b>Sinead Seoighe</b> - HTML expert</h4>
+	  <h4><b>Aisling Carrick</b> - Database maintenance</h4>
+	  <br>
+	  <img src="/images/grouppic.png" height="100px" width="300px">
+  </div>
+</div> 
+</template>
+
+<!-- Contact Us template -->
+<template name="contactUs">
+<div class="jumbotron" id="makeTransparent">
+     <div class="container">
+        <div class="row">
+            <div>
+                <div class="container">
+                    <div class="container">
+                        <h1><b>Contact us</b></h1>
+                        <hr>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form class="contactUsForm">
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <label for="name">Name</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" id="name" class="form-control required" placeholder="Enter your name here">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <label for="email">E-mail</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" id="email" class="form-control required" placeholder="Enter your e-mail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <label for="question">Question</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" id="question" class="form-control required" placeholder="Enter your query">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <h4 class="text-center">We are sorry if you are experiecing any problems. We will try our best to reach you ASAP. </h4>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <button class="btn btn-primary" onclick="sendMail()">Submit request</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-3">
+                                            <h4><b>Or you can reach us via</b></h4>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <div class="social row">
+                                                <div class="btn-group btn-group-justified">
+                                                    <a href="#" class="btn btn-primary"><span class="fa fa-2x fa-facebook"></span></a>
+                                                    <a href="#" class="btn btn-danger"><span class="fa fa-2x fa-google"></span></a>
+                                                    <a href="https://github.com/oluchia/byteme.git" target="_blank" class="btn btn-primary"><span class="fa fa-2x fa-github"></span></a>
+                                                    <a href="#" class="btn btn-info"><span class="fa fa-2x fa-twitter"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-xs-3 col-xs-offset-5 col-md-3 col-md-offset-5">- OR -</label>
+                                    </div>
+                                    <div class="form-group row">
+                                            <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-3">
+                                            <h4><b>Through email</b><br></h4>
+											</div>
+										<div class="col-md-8 col-md-offset-2">
+                                            <p><ul><li><span class="glyphicon glyphicon-envelope"></span> <b>Project Leader</b>: oluchiaxxx@gmail.com</li>
+													<li><span class="glyphicon glyphicon-envelope"></span> <b>Public Relations:</b> mattm2812@gmail.com</li></ul></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<!-- Find Us template -->
+<template name="findUs">  
+<div class="container">
+  <div class="jumbotron" style="float:left">
+    <h1><b>Find Us</b></h1><br>
+    <h4  class="text-center"><b>Postal address:</b><br>
+								IT Building,<br>
+								NUI Galway,<br>
+								University Rd,<br>
+								Galway,<br>
+								Ireland<br>
+								<br>
+								
+							<b>Opening hours:</b><br>
+								Mon-Fri: 10am - 5pm<br>
+								Sat-Sun: 2pm - 4pm
+	</h4>
+	
+<!--<form action="" method="post">
+    <input type="submit" value="Send details to embassy" />
+    <input type="hidden" name="button_pressed" value="1" />
+</form>
+<form method="post" action="">
+    <input type="text" id="email_address" name="name" placeholder="Enter your email address" required>
+    <button onclick="sendMail(); return false">Send Email</button>
+</form>
+<script type="text/javascript">
+  function sendMail() {
+    var link = 'mailto:mattm2812@gmail.com?subject=Message from '
+             +document.getElementById('email_address').value
+             +'&body='+document.getElementById('email_address').value;
+    window.location.href = link;
+}
+</script>-->
+								
+  </div>
+<div class="jumbotron" style="float:right">
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD08T2oBdJybZ49h1jd3dMQ6AaZafvyVr8
+    &q=National+University+Of+Ireland,Galway" allowfullscreen>
+</iframe>
+</div>
+</div>
+    </template>
+
+<!-- Profile Page template -->
+<template name="profile">   
+    <style>
+        body {
+            background-color: #6f5499;
+        }
+</style>  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+          
+        <p><a href="#">My Profile</a></p>
+        <img src="https://daniellestolt.files.wordpress.com/2012/12/question-mark.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="well">
+        <p><a href="#">Interests</a></p>
+        <p>
+          <span class="label label-default">Horror</span>
+          <span class="label label-primary">Crime</span>
+          <span class="label label-success">Spin offs</span>
+          <span class="label label-info">Terrible movies are still good</span>
+          <span class="label label-warning">Cringe</span>
+          <span class="label label-danger">Mystery</span>
+        </p>
+      </div>
+        {{#each users}}
+        {{#each emails}}
+    
+   <!--   <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Ey!</strong></p>
+        People are looking at your profile. Find out who.
+      </div>-->
+  <p> <small><cite title="Galway, Ireland">Galway, Ireland <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small></p>
+
+      <p><i class="glyphicon glyphicon-envelope"></i> {{address}}
+                            <br /></p>
+
+     <!--  <p><i class="glyphicon glyphicon-globe"></i><a href="https://google.ie" target="_blank">Google(any website , edit later)</a>
+                  
+        <br /></p>-->
+
+        {{/each}}
+        {{/each}}
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <center contenteditable="true">Recent comments:</center>
+             <!-- <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>      -->
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <!-- database post comments-->
+	  {{> posts}}
+	   <div class="row col-sm-12 col-sm-offset-0 textPost">
+        <div class="row">
+            {{#each posts}}
+
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-2 pull-left">
+                        {{> avatar userId=createdBy shape="circle"}}
+                    </div>
+                    <div class="col-sm-3 pull-right">
+                        {{timeDiff (date)}}
+                    </div>
+                </div>
+                <div class="row spacer">
+                    <div class="col-sm-12">
+                        <input class="form-control hidden" type="text" id="edit{{_id}}" value="{{post}}">
+                            <div id="post{{_id}}"> {{post}} </div>
+                    </div>
+                </div>
+                
+                 <div class="row spacer">
+        <div class="col-xs-3">
+            <div class="likeBox">
+                <input type="checkbox" id="like{{_id}}" checked="{{checked (likes.users)}}">
+                <label for="like{{_id}}">
+                    {{likes.totalLikes}}
+                </label>    
+            </div>
+        </div>
+    <div class="col-xs-3">
+    <a class="btn btn-trash">
+        <i class="fa fa-trash" aria-hidden="true"></i>    
+    </a>    
+    </div>
+                     
+    {{#if userCreated (createdBy)}}
+        <div class="col-xs-3 editBox">
+            <input type="checkbox" id="editPost{{this._id}}">
+            <label for="editPost{{this._id}}">
+            </label>
+        </div>  
+    {{/if}}
+    </div>
+</div>
+        
+          
+            {{/each}}
+</div>
+</div>                 
+    
+    
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>USER RATING:</p>
+               {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+
+
+
+       <span class="likebtn-wrapper" data-identifier="item_1"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+   <!--   <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button>-->
+      </div>      
+      <div class="well">
+        <p> <img src="http://www.igimages.co.uk/blogimages2010/march/IMDB.jpg" class="img-square" height="95" width="135" alt="Avi"> 
+		<a href="http://www.imdb.com/" target="_blank">IMDB</a>
+		</p>
+      </div>
+      <div class="well">
+        <p>YOUR ADS COULD BE HERE</p>
+		 <p>Contact us if interested</p>
+		 <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click Here</a></p>
+      </div>
+    </div>
+      
+  </div>
+</div>
+    
+</template>
+    
+<template name="posts">
+    {{#if currentUser}}
+    <div class="well col-xs-12 col-xs-offset">
+    <div class="row col-xs-10 col-xs-offset-1">
+        <form class="form-horizontal" role="form" id="postForm">
+            <div class="row">
+            <div class="form-group">
+                <div class="col-xs-14" id="well-post">
+                    <textarea class="form-control required" rows="3" id="inputPost" placeholder="Join the discussion..." maxlength="512"></textarea>
+                    <label id="charRemaining" for="inputPost">{{charsRemaining}}</label>
+                </div>      
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-3">
+                    <!-- Camera -->
+                    <i class="fa fa-camera-retro fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-3">
+                    <!-- Video -->
+                    <i class="fa fa-video-camera fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-3 pull-right">
+                    <button type="submit" class="btn btn-primary">Share</button>
+                </div>
+            </div>
+        </form> 
+    </div>
+    </div>
+    {{/if}}
+    <div class="row col-sm-12 col-sm-offset-0 textPost">
+        <div class="row">
+        {{#each posts}}
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-2 pull-left">
+                        {{> avatar userId=createdBy shape="circle"}}
+                    </div>
+                    <div class="col-sm-3 pull-right">
+                        {{timeDiff (date)}}
+                    </div>
+                </div>
+                <div class="row spacer">
+                    <div class="col-sm-12">
+                        <input class="form-control hidden" type="text" id="edit{{_id}}" value="{{post}}">
+                            <div id="post{{_id}}"> {{post}} </div>
+                    </div>
+                </div>
+                
+                 <div class="row spacer">
+        <div class="col-xs-3">
+            <div class="likeBox">
+                <input type="checkbox" id="like{{_id}}" checked="{{checked (likes.users)}}">
+                <label for="like{{_id}}">
+                    {{likes.totalLikes}}
+                </label>    
+            </div>
+        </div>
+    <div class="col-xs-3">
+    <a class="btn btn-trash">
+        <i class="fa fa-trash" aria-hidden="true"></i>    
+    </a>    
+    </div>
+    {{#if userCreated (createdBy)}}
+        <div class="col-xs-3 editBox">
+            <input type="checkbox" id="editPost{{this._id}}">
+            <label for="editPost{{this._id}}">
+            </label>
+        </div>  
+    {{/if}}
+    </div>
+</div>
+            {{/each}}
+</div>         
+</div>
+</template>
+    
+<!-- Tv Show template -->
+<template name="tvshows">
+<!--Code when using database! -->
+{{#each tvshows}}
+<div class="col-sm-4">
+<div class="thumbnail">
+       <a href={{infopage}} target="_self">
+       <img src={{image}} class="img-thumbnail" width="150" height="150">
+		<div class="caption">
+		<p class="title_1">{{name}}
+		<br>
+		</p>
+        {{> starsRating rating=rating star='\\f005' class='mystar' size="sm"}}
+		</div>
+		</a></div>
+		</div>
+		{{/each}} 
+</template>
+
+
+<template name="movies">
+<!--Code when using database! -->
+{{#each movies}}
+<div class="col-sm-4">
+<div class="thumbnail">
+       <a href={{infopage}} target="_self">
+       <img src={{image}} class="img-thumbnail" width="150" height="150">
+		<div class="caption">
+		<p class="title_1">{{name}}
+		<br>
+		</p>
+        {{> starsRating rating=rating star='\\f005' class='mystar' size="sm"}}
+		</div>
+		</a></div>
+		</div>
+		{{/each}}  
+</template>

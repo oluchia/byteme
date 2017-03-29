@@ -1,0 +1,67 @@
+/* 1 */
+{
+    "_id" : "wY8M5Anzyue9544Rn",
+    "post" : "Logan 1",
+    "date" : ISODate("2017-03-19T20:25:57.530Z"),
+    "movie" : "58bf1d992f8c564ad8d9cdcc",
+    "createdBy" : "AQRge65tYKRisrTWG",
+    "likes" : {
+        "totalLikes" : 0,
+        "users" : []
+    },
+    "retweets" : {
+        "totalRetweets" : 0,
+        "users" : []
+    }
+}
+
+/* 2 */
+{
+    "_id" : "yiaaiZDJXGTc5rwvv",
+    "post" : "Logan 2",
+    "date" : ISODate("2017-03-19T20:27:27.826Z"),
+    "movie" : "58bf1d992f8c564ad8d9cdcc",
+    "createdBy" : "AQRge65tYKRisrTWG",
+    "likes" : {
+        "totalLikes" : 0,
+        "users" : []
+    },
+    "retweets" : {
+        "totalRetweets" : 0,
+        "users" : []
+    }
+}
+
+/* 3 */
+{
+    "_id" : "4XrGSDALMSzXucw7m",
+    "post" : "La La Land 1",
+    "date" : ISODate("2017-03-19T21:04:19.604Z"),
+    "movie" : null,
+    "createdBy" : null,
+    "likes" : {
+        "totalLikes" : 0,
+        "users" : []
+    },
+    "retweets" : {
+        "totalRetweets" : 0,
+        "users" : []
+    }
+}
+
+/* 4 */
+{
+    "_id" : "9kH6kZCTnLkenm9uS",
+    "post" : "La La Land 2",
+    "date" : ISODate("2017-03-29T10:39:12.208Z"),
+    "movie" : null,
+    "createdBy" : "AQRge65tYKRisrTWG",
+    "likes" : {
+        "totalLikes" : 0,
+        "users" : []
+    },
+    "retweets" : {
+        "totalRetweets" : 0,
+        "users" : []
+    }
+}

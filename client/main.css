@@ -1,0 +1,218 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* CSS of TV Shows and Movies */
+thumbnail {
+	
+	float:right;
+	width:500px;
+	height:300px;
+}
+
+.title_1 {
+	text-align:center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+p, li, a {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#makeTransparent {
+    background-color: transparent !important;
+}
+
+.thumbnail:hover {
+	box-shadow:5px 0px 40px rgba(0,0,0,.2);
+}
+
+/* CSS of Rating Section */
+.awesome {
+    font-family: FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    display:inline-block;
+    unicode-bidi:bidi-override;
+    direction:rtl;
+    font-size:30px;
+    float: left;
+}
+
+.awesome : hover {
+    cursor: pointer;
+}
+
+.mystar {
+    font-family: FontAwesome;
+    text-align: center;
+}
+
+/* CSS declarations go here */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS of Info page */
+
+.jumbotron img {
+    float: left;
+    margin: 0px 15px 15px 0px;
+}
+
+.desc { 
+   font-style: italic;
+}
+
+.desc-left {
+    float: right;
+    
+}
+
+
+/* CSS of comment area*/
+body { 
+    background: #fafafa;
+    margin-bottom: 60px;
+}
+
+.row label[for=comment] {
+    color: dimgrey;
+}
+
+.row label {
+    padding: 15px; 
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.likeBox label:before {
+    content: "\f087";
+    font-family: FontAwesome;
+    color: #3498db;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.likeBox input[type=checkbox]:checked + label:before {
+    content: "\f164";
+    font-family: FontAwesome;
+    color: #333;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.editBox label:before {
+    content: "\f040";
+    font-family: FontAwesome;
+    color: #3498db;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.editBox input[type=checkbox]:checked + label:before {
+    content: "Save";
+    font-family: FontAwesome;
+    color: #333;
+    cursor: pointer;
+    cursor: hand;
+}
+
+/*CSS of footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 10px;
+  line-height: 30px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+footer a{
+    float: right;
+    color: #222;
+}
+
+footer a:hover{
+    color: #808080;
+    text-decoration: underline;   
+}
+
+/* CSS of navbar */
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default.navbar-brand {
+  color: #808080;
+}
+.navbar-default.navbar-brand:hover,
+.navbar-default.navbar-brand:focus {
+  color: #6f5499;
+}
+.navbar-default .navbar-text {
+  color: #808080;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #808080;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #6f5499;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #6f5499;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #6f5499;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #808080;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #808080;
+}
+.navbar-default .navbar-link {
+  color: #808080;
+}
+.navbar-default .navbar-link:hover {
+  color: #6f5499;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #808080;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #6f5499;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #6f5499;
+    background-color: #ffffff;
+  }
+}

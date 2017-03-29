@@ -1,0 +1,180 @@
+/* 1 */
+{
+    "_id" : ObjectId("58b07f997182c9cda052abee"),
+    "title" : "LA LA LAND",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "description" : " Directed by, Damien Chazelle, the movie follows a musician and an aspiring actress who meet and fall in love in Los Angeles, the city known for crushing hopes and breaking hearts.",
+    "genre" : "Comedy, Musical, Drama",
+    "director" : "Damien Chazelle",
+    "actor" : "Ryan Gosling, Emma Stone",
+    "link" : "https://youtu.be/0pdqf4P9MB8",
+    "duration" : "128min",
+    "release" : 2016,
+    "imdb" : 8.8000000000000007,
+    "rating" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("58bf16522f8c564ad8d9cdcb"),
+    "title" : "MOCKINGJAY",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_SY1000_CR0,0,657,1000_AL_.jpg",
+    "description" : " The Hunger Games: Mockingjay, Part 2 is the final installment in The Hunger Games film series based on the final book in The Hunger Games trilogy, written by Suzanne Collins.",
+    "genre" : "Adventure, Sci-Fi",
+    "director" : "Francis Lawrence",
+    "actor" : "Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth",
+    "link" : "https://youtu.be/3PkkHsuMrho",
+    "duration" : "135min",
+    "release" : 2015,
+    "imdb" : 7.2000000000000002
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("58bf1d992f8c564ad8d9cdcc"),
+    "title" : "LOGAN",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1MjkzMjczMV5BMl5BanBnXkFtZTgwNDk4NjYyMTI@._V1_SY1000_CR0,0,676,1000_AL_.jpg",
+    "description" : " In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan's attempts to hide from the world and his legacy are up-ended when a young mutant arrives, being pursued by dark forces.",
+    "genre" : "Action, Sci-Fi, Drama",
+    "director" : "James Mangold",
+    "actor" : "Hugh Jackman, Patrick Stewart, Dafne Keen",
+    "link" : "https://youtu.be/Div0iP65aZo",
+    "duration" : "137min",
+    "release" : 2017,
+    "imdb" : 8.6999999999999993
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("58bf1db82f8c564ad8d9cdcd"),
+    "title" : "SPLIT",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BZTJiNGM2NjItNDRiYy00ZjY0LTgwNTItZDBmZGRlODQ4YThkL2ltYWdlXkEyXkFqcGdeQXVyMjY5ODI4NDk@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+    "description" : " Three girls are kidnapped by 'Dennis', one of the 23 split personalities inhabiting the body of Kevin Wendell Crumb. As they are held captive, a final personality, 'The Beast', begins to materialize.",
+    "genre" : "Thriller, Horror",
+    "director" : "M. night Shyamalan",
+    "actor" : "James McAvoy, Anya Taylor-Joy, Haley Lu Richardson",
+    "link" : "https://youtu.be/84TouqfIsiI",
+    "duration" : "117min",
+    "release" : 2017,
+    "imdb" : 7.5999999999999996
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("58bf1dd52f8c564ad8d9cdce"),
+    "title" : "FANTASTIC BEASTS",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxOTM1OTI4MV5BMl5BanBnXkFtZTgwODE5OTYxMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "description" : " In 1926, Newt Scamander arrives in New York by boat, carrying a mysterious suitcase that is home to dozens of magical creatures. However, some fantastic beasts escape, which could spell trouble for both the wizarding and No-Maj worlds.",
+    "genre" : "Adventure, Family, Drama",
+    "director" : "David Yates",
+    "actor" : "Eddie Redmayne, Katherine Waterston, Alison Sudol",
+    "link" : "https://youtu.be/YdgQj7xcDJo",
+    "duration" : "133min",
+    "release" : 2016,
+    "imdb" : 8
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("58bf1deb2f8c564ad8d9cdcf"),
+    "title" : "BAD NEIGHBOURS 2",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NzUxMDUzN15BMl5BanBnXkFtZTgwNzI2MTY4ODE@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
+    "description" : " When their new next-door neighbors turn out to be a sorority even more debaucherous than the fraternity previously living there, Mac and Kelly team with their former enemy, Teddy, to bring the girls down.",
+    "genre" : "Comedy",
+    "director" : "Nicholas Stoller",
+    "actor" : "Seth Rogen, Rose Byrne, Zac Efron",
+    "link" : "https://youtu.be/n5WWdno6HXM",
+    "duration" : "92min",
+    "release" : 2016,
+    "imdb" : 5.7000000000000002
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("58c053f72f8c564ad8d9cdd0"),
+    "title" : "ORANGE IS THE NEW BLACK",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMzMjAxNDY5MV5BMl5BanBnXkFtZTgwMzAzNTQxODE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "description" : " The story of Piper Chapman, a woman in her thirties who is sentenced to fifteen months in prison after being convicted of a decade-old crime of transporting money to her drug-dealing girlfriend.",
+    "genre" : "Comedy, Drama",
+    "director" : "Jenji Kohan",
+    "actor" : "Taylor Schilling, Danielle Brooks, Taryn Manning",
+    "link" : "https://youtu.be/aU_FvfdCBRk",
+    "duration" : "44min",
+    "release" : 2014,
+    "imdb" : 8.6999999999999993
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("58c054f52f8c564ad8d9cdd1"),
+    "title" : "HOW TO GET AWAY WITH MURDER",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BYjA3ODQwZmEtZjI5Zi00ZjAwLTk2NTktZmY4NDQyMWVjMDU0XkEyXkFqcGdeQXVyMzAzNTY3MDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "description" : " A group of ambitious law students and their brilliant criminal defense professor become involved in a twisted murder plot that promises to change the course of their lives.",
+    "genre" : "Drama, Crime, Mystery, Thriller",
+    "director" : "Peter Nowalk, Michael Foley",
+    "actor" : " Viola Davis, Billy Brown, Alfred Enoch, Aja Naomi King",
+    "link" : "https://youtu.be/dkb-aBaxkVk",
+    "duration" : "44min",
+    "release" : 2014,
+    "imdb" : 8.3000000000000007
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("58c06f3a2f8c564ad8d9cdd3"),
+    "title" : "SHERLOCK",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY3NTljMjEtYzRiMi00NWM2LTkzNjItZTVmZjE0MTdjMjJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ4NTc5OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "description" : " The story of Piper Chapman, a woman in her thirties who is sentenced to fifteen months in prison after being convicted of a decade-old crime of transporting money to her drug-dealing girlfriend.",
+    "genre" : "Crime, Drama, History, Mystery",
+    "director" : "Mark Gatiss, Steven Moffat",
+    "actor" : "Rupert Graves, Benedict Cumberbatch, Martin Freeman",
+    "link" : "https://youtu.be/qlcWFoNqZHc",
+    "duration" : "90min",
+    "release" : 2010,
+    "imdb" : 9.1999999999999993
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("58c071342f8c564ad8d9cdd4"),
+    "title" : "BARNEY",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BOTI5NDE1OTU4MF5BMl5BanBnXkFtZTgwMjM4MTA2MDE@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "description" : " From pretending to be a pilot on a make-believe airplane to pretending to be a pirate in search of buried treasure, Barney's friends discover that creativity lets them soar in the wings of imagination!",
+    "genre" : "Adventure, Comedy, Family",
+    "director" : " Sheryl Leach",
+    "actor" : "Bob West, Julie Johnson, Dean Wendt",
+    "link" : "https://youtu.be/F5dS0WJ4Oiw",
+    "duration" : "30min",
+    "release" : 1992,
+    "imdb" : 3.6000000000000001
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("58c071e12f8c564ad8d9cdd5"),
+    "title" : "COMMUNITY",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2Njk2MzY2M15BMl5BanBnXkFtZTgwMDkxODg3MDE@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "description" : " A suspended lawyer is forced to enroll in a community college with an eclectic staff and student body.",
+    "genre" : "Comedy",
+    "director" : "Dan Harmon",
+    "actor" : "Joel McHale, Danny Pudi, Donald Glover",
+    "link" : "https://youtu.be/C4W4L9TLJa8",
+    "duration" : "22min",
+    "release" : 2009,
+    "imdb" : 8.5000000000000000
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("58c057082f8c564ad8d9cdd2"),
+    "title" : "DAREDEVIL",
+    "image" : "https://www.images.subtitrare.info/mv5bmtgymju0mzg5nl5bml5banbnxkftztgwmtg3mdyynte._v1_ux182_cr00182268_al_.jpg",
+    "description" : " Matt Murdock, with his other senses superhumanly enhanced, fights crime as a blind lawyer by day, and vigilante by night.",
+    "genre" : "Drama, Crime, Action",
+    "director" : "Drew Goddard",
+    "actor" : "Charlie Cox, Vincent D'Onofrio, Deborah Ann Woll",
+    "link" : "https://youtu.be/jAy6NJ_D5vU",
+    "duration" : "54min",
+    "release" : 2015,
+    "imdb" : 8.8000000000000007
+}

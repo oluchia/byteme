@@ -1,0 +1,36 @@
+//server main.js
+Meteor.publish('allmovie',function(){
+	return movie.find();
+});
+Meteor.publish('alltvshows',function(){
+	return tvshows.find();
+});
+Meteor.publish('searchtv',function(mySearch){
+	//return tvshows.find({"name":mySearch.value})
+	return tvshows.find({"name":"Barney"})
+
+});
+//client main.js
+
+Template.tvshows.helpers({
+	tvshows:function(){
+		return tvshows.find();
+	}
+});
+Template.movies.helpers({
+	movie:function(){
+		return movie.find();
+	}
+});
+var x='alltvshows';
+
+Template.nav.events({
+	'click .bt1':function(event,instance){
+		x='searchtv';
+	}
+});
+Meteor.subscribe(x);
+	
+Meteor.subscribe('allmovie');
+//Meteor.subscribe('searchtv');
+

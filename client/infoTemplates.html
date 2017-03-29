@@ -1,0 +1,563 @@
+<template name="info">
+<div class="container">
+    <div class="jumbotron">
+        {{#each data}}
+        {{#if titleIs "LA LA LAND"}}
+         <img src={{image}} alt="movie1" class="img-square">
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true }}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info1">
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/logan.jpg" alt="movie1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "LOGAN"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info2">
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/split.jpg" alt="movie1" class="img-square">
+    {{#each data}}
+        {{#if titleIs "SPLIT"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info3">  
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/fantastic.jpg" alt="movie1" class="img-square">
+    {{#each data}}
+        {{#if titleIs "FANTASTIC BEASTS"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info5"> 
+<div class="container">
+    <div class="jumbotron">
+        <img src={{image}} alt="movie1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "BAD NEIGHBOURS 2"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right" id="{{_id}}">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info6"> 
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/mockingjay-2.jpg" alt="movie1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "MOCKINGJAY"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true }}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info7"> 
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/o.jpg" alt="tv1" class="img-square">
+    {{#each data}}
+        {{#if titleIs "ORANGE IS THE NEW BLACK"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info8"> 
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/barney.jpg" alt="tv1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "BARNEY"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info9">
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/sherlock.jpg" alt="tv1" class="img-square">
+    {{#each data}}
+        {{#if titleIs "SHERLOCK"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info10">  
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/community.jpg" alt="tv1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "COMMUNITY"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info11">  
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/daredevil.jpg" alt="tv1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "DAREDEVIL"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>
+
+<template name="info12"> 
+<div class="container">
+    <div class="jumbotron">
+        <img src="/images/HTGAWM.jpg" alt="tv1" class="img-square">
+     {{#each data}}
+        {{#if titleIs "HOW TO GET AWAY WITH MURDER"}}
+    <div class="title">
+        <h1>{{title}}</h1> 
+    <div class="desc">
+        {{description}}
+    </div>
+    <div class="desc-left">
+        <p style="font-size: 16px"><strong>Genre:</strong> {{genre}}</p>
+        <p style="font-size: 16px"><strong>Director:</strong> {{director}}</p>
+        <p style="font-size: 16px"><strong>Actor:</strong> {{actor}}</p>
+        
+        <!-- Trailer button -->
+        <div class="block-trailer">
+            <a href={{link}} target="_blank" class="btn btn-primary">
+                <i class="fa fa-video-camera mr5"></i> Trailer</a>
+        </div>
+    </div>
+    </div>
+    <div class="desc-right">
+        <p style="font-size: 16px"><strong>Duration:</strong> {{duration}}</p>
+        <p style="font-size: 16px"><strong>Release:</strong> {{release}}</p>
+        <p style="font-size: 16px"><strong>IMDb:</strong> {{imdb}}</p>
+        
+        {{> starsRating id='rating' star='\\f005' class='awesome' mutable=true}}
+    </div>
+        {{/if}}
+        {{/each}}
+</div>   
+</div>      
+    <!-- Comments section template -->  
+<div class="container">
+	<div class="row">
+		<label for="comment">Comments:</label>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+{{> posts}}
+</div>
+</div>        
+</div>  
+</template>

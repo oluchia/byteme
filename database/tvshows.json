@@ -1,0 +1,53 @@
+/* 1 */
+{
+    "_id" : ObjectId("58ced1d12f8c564ad8d9cdde"),
+    "name" : "Barney",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BOTI5NDE1OTU4MF5BMl5BanBnXkFtZTgwMjM4MTA2MDE@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "rating" : 2,
+    "infopage" : "info8"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("58ced1d12f8c564ad8d9cddd"),
+    "name" : "How to Get Away with Murder",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BYjA3ODQwZmEtZjI5Zi00ZjAwLTk2NTktZmY4NDQyMWVjMDU0XkEyXkFqcGdeQXVyMzAzNTY3MDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating" : 4.5000000000000000,
+    "infopage" : "info12"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("58ced2452f8c564ad8d9cddf"),
+    "name" : "Sherlock",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY3NTljMjEtYzRiMi00NWM2LTkzNjItZTVmZjE0MTdjMjJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ4NTc5OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating" : 5,
+    "infopage" : "info9"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("58ced25d2f8c564ad8d9cde0"),
+    "name" : "Community",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2Njk2MzY2M15BMl5BanBnXkFtZTgwMDkxODg3MDE@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "rating" : 3.5000000000000000,
+    "infopage" : "info10"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("58ced2a52f8c564ad8d9cde2"),
+    "name" : "Orange is the New Black",
+    "image" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMzMjAxNDY5MV5BMl5BanBnXkFtZTgwMzAzNTQxODE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "rating" : 4.5000000000000000,
+    "infopage" : "info7"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("58b839292f8c564ad8d9cdbb"),
+    "name" : "Daredevil",
+    "image" : "https://www.images.subtitrare.info/mv5bmtgymju0mzg5nl5bml5banbnxkftztgwmtg3mdyynte._v1_ux182_cr00182268_al_.jpg",
+    "rating" : 4,
+    "infopage" : "info11"
+}

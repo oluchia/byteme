@@ -12,7 +12,7 @@ body {
 /*CSS of Login Buttons */
 
 #login-buttons{
-padding:15%;
+//padding:15%;
 }
 
 .login-text-and-button{
@@ -80,8 +80,12 @@ margin-bottom: 10px;
 .accounts-dialog{
 padding: 40px;
 width:340px;
+color:white;
+background-color:transparent;
+border:0px;
 }
 /* ends */
+
 
 /* CSS of TV Shows and Movies */
 thumbnail {

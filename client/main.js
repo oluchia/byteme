@@ -4,14 +4,26 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 
 Meteor.subscribe('allPosts');
-Meteor.subscribe('userPosts');
+//Meteor.subscribe('userPosts');
 Meteor.subscribe('tvshows');
 Meteor.subscribe('movies');
 Meteor.subscribe('data');
 
+//Search attempt
+var x='tvshows';
+
+Template.nav.events({
+	'click .bt1':function(event,instance){
+		x='searchtv';
+	}
+});
+
+Meteor.subscribe(x);
+//Meteor.subscribe('searchtv');
+
 Meteor.call('sendEmail',
-			'email',
 			'mattm2812@mail.com',
+			'bytemail123@gmail.com',
 			'Hello from Meteor!',
 			'This is a test of Email.send');
 
@@ -28,6 +40,10 @@ Template.info.events({
        Data.update({rating: event.target.rating.value}, {$set: {rating:rating}});
         //Meteor.call('insertRatings', ratings);
     } 
+});
+
+Avatar.setOptions({
+    gravatarDefault: "identicon"
 });
 
 Template.info.helpers({
@@ -274,7 +290,6 @@ Template.posts.events({
     },
 
     'submit #postForm' : function(event) {
-        
         event.preventDefault();
         var post = event.target.inputPost.value;
         // Clearing the textarea content

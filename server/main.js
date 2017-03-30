@@ -57,7 +57,7 @@ Meteor.methods({
             {
                 post:post,
                 date: new Date(),
-                movie: title,
+                movie: this.movieId,
                 createdBy: this.userId,
                 likes:{
                     totalLikes: 0,

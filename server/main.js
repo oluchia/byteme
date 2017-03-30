@@ -1,4 +1,4 @@
-import { Meteor } from 'meteor/meteor';
+ import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
   // code to run on server at startup
@@ -26,6 +26,13 @@ Meteor.publish('data', function() {
 
 Meteor.publish("users", function() {
     return Meteor.users.find();
+});
+
+//Search attempt
+Meteor.publish('searchtv',function(mySearch){
+	//return tvshows.find({"name":mySearch.value})
+	return tvshows.find({"name":"Barney"})
+
 });
 
 Meteor.methods({

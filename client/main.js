@@ -10,6 +10,7 @@ Meteor.subscribe('movies');
 Meteor.subscribe('data');
 
 //Search attempt
+/*
 var x='tvshows';
 
 Template.nav.events({
@@ -18,8 +19,13 @@ Template.nav.events({
 	}
 });
 
-Meteor.subscribe(x);
+Meteor.subscribe(x);*/
 //Meteor.subscribe('searchtv');
+
+Template.contactUs.onRendered(function(){
+	$(".contactUsForm").validate();
+	
+});
 
 Meteor.call('sendEmail',
 			'mattm2812@mail.com',
